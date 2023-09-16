@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS-ASSIGNMENT</title>
+    <style>
+        .long-para {
+            width: 200px;
+            border: 1px solid red;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        div::before {
+            content: "⬇️⬇️ HOVER ⬇️⬇️";
+        }
+
+        p:hover {
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="long-para">
+            This is a loooooooooooooooooooong text! This will not fit in this box.
+        </p>
+    </div>
+</body>
+
+</html>
